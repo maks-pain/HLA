@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PBEX775M4N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-PBEX775M4N');
+        gtag('set', {'user_id': '${name}' }); // Задание идентификатора пользователя с помощью параметра user_id (текущий пользователь).
+
+    </script>
+</head>
+<body>
+
+<p th:text="'Hello, ' + ${name} + '!'"/>
+
+
+
+</body>
+</html>
